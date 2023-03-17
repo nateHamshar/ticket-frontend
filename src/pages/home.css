@@ -1,0 +1,113 @@
+.home{
+    display: flex;
+}
+.left-side{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.ticketAreaHeader{
+    color: orangered;
+    margin-left: 2rem;
+}
+.closedTickets{
+    margin-top: 15%;
+}
+.tickets{
+    height: 30%;
+}
+.ticketArea{
+    height: 225px;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.ticketDetails{
+    display: flex;
+    height: 2rem;
+    border-bottom: 1px solid gray;
+    align-items: center;
+}
+.ticketDetails:hover{
+    cursor: pointer; 
+}
+.ticketTitle{
+    margin: 0;
+    margin-left: 2rem;
+    padding: 0;
+}
+.ticketTime{
+    color: black;
+}
+.openStatus, .ticketTime{
+    margin-left: auto;
+    margin-right: 1rem;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.viewChanger{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+.viewChangeHeader:hover{
+    cursor: pointer;
+}
+#NT{
+    color: orangered;
+    text-decoration: underline;
+}
+.ticketViewer{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 60vh;
+}
+
+.activeView{
+    color: red;
+}
+
+@media screen and (max-width: 1600px) {
+    
+    .ticketTitle{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ticketViewer{
+        height: 65vh;
+    }
+}
+
+@media  screen and (max-width: 1300px) {
+    .ticketTitle{
+        font-size: .75rem
+    }
+    .ticketTime{
+        font-size: .75rem;
+    }
+    .openStatus{
+        font-size: .75rem;
+    }
+
+    .ticketViewer{
+        height: 60vh;
+    }
+    .closedTickets{
+        margin-top: 25%;
+    }
+}

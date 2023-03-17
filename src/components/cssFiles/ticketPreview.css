@@ -1,0 +1,115 @@
+.ticketView{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.previewTitle{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.previewLocation{
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.previewTime{
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 5%;
+}
+
+.previewDescription{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    width: 90%;
+    margin: 2rem auto;
+    text-indent: 2rem;
+}
+.statusDiv{
+    margin-top: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.previewStatus{
+    margin-left: 5%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.statusChanger{
+    height: 60%;
+    width: 25%;
+    background-color: navy;
+    border: 1px solid orangered;
+    color: white;
+    border-radius: 100vw;
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.statusChanger:hover{
+    cursor: pointer;
+    color: orangered;
+    transition: 250ms;
+}
+.statusChanger:active{
+    height: 55%;
+    width: 20%;
+}
+
+
+@media screen and (max-width: 1800px){
+    .previewTitle{
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .previewTitle{
+        font-size: 1.5rem;
+    }
+    .previewLocation{
+        font-size: 1rem;
+    }
+
+    .statusChanger{
+        font-size: 1rem;
+    }
+    .previewStatus{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .previewTitle{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .previewTitle{
+        font-size: 1rem;
+    }
+    .previewLocation{
+        font-size: .85rem;
+    }
+    .previewTime{
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .previewDescription{
+        margin: 1rem auto;
+    }
+    .statusChanger{
+        font-size: .75rem;
+    }
+}

@@ -1,0 +1,80 @@
+.signup{
+    padding-bottom: 200px;
+}
+.signupForm{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: white;
+    border: 2px solid navy;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signupHeader{
+    margin-left: 5%;
+    color: orangered;
+    font-size: 2rem;
+}
+
+.inputsDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-top: 5%;
+}
+
+.inputField{
+    margin-left: 1rem;
+}
+
+.inputLabel{
+    color: navy;
+    font-size: 1.75rem;
+    margin-right: auto;
+}
+
+.submitDiv{
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: 10%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.signupButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    min-height: 50px;
+    width: 25%;
+    font-size: 2rem;
+    font-family: serif;
+    color: navy;
+    border: 1px solid navy;
+    background-color: white;
+    border-radius: 100vw;
+}
+
+.signupButton:hover{
+    color: orangered;
+    border-color: orangered;
+    cursor: pointer;
+}
+
+.errorDiv{
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 5% 5%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 1.5rem;
+}

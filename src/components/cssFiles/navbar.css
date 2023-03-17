@@ -1,0 +1,68 @@
+.navHeader{
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    height: 100px;
+    display: flex;
+
+}
+
+.container{
+    width: 80%;
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.titleDiv{
+    width: 20%;
+    margin-right: auto;
+}
+.notLoggedInDiv{
+    margin-left: auto;
+    display: flex;
+}
+.homeLink{
+    color: navy;
+    text-decoration: none;
+}
+.navLink{
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: .75rem;
+}
+.navLink:hover{
+    color: orangered
+}
+
+.logoutDiv{
+    margin-left: auto;
+}
+
+.greetingMessage{
+    font-size: 1.25rem;
+    margin-right: 2rem;
+}
+.logoutButton{
+    height: 4rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+    color: navy;
+    font-family: serif;
+    font-weight: 600;
+}
+
+.logoutButton:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1375px){
+    .homeLink{
+        font-size: .75rem;
+    }
+    .logoutButton{
+        font-size: 1.5rem;
+    }
+}
