@@ -21,7 +21,7 @@ const handleSubmit = async () => {
     console.log(companyCode)
     const ticket = {title, location, description, open, companyCode}
     
-    const response = await fetch("/api/tickets", {
+    const response = await fetch("https://ticket-system-ldom.onrender.com/api/tickets", {
         method: "POST",
         body: JSON.stringify(ticket),
         headers: {

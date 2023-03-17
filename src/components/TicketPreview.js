@@ -27,7 +27,7 @@ const TicketPreview = ({previewTicket}) => {
 
         const ticket = {open: open}
     
-        const response = await fetch(`/api/tickets/${previewTicket._id}`, {
+        const response = await fetch(`https://ticket-system-ldom.onrender.com/api/tickets/${previewTicket._id}`, {
             method: "PATCH",
             body: JSON.stringify(ticket),
             headers: {
