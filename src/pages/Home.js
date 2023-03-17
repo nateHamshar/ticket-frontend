@@ -18,7 +18,7 @@ const Home = () => {
     useEffect(() => {
         if (user){
         const fetchTickets = async () => {
-            const response = await fetch("https://ticket-system-ldom.onrender.com/api/tickets", {
+            const response = await fetch("/api/tickets", {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
@@ -67,7 +67,7 @@ const Home = () => {
 // sets the previewed ticket based on which was clicked
     const changePreview = (id) => {
         const fetchTicket = async () => {
-            const response = await fetch(`https://ticket-system-ldom.onrender.com/api/tickets/${id}`, {
+            const response = await fetch(`/api/tickets/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }

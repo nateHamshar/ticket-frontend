@@ -10,7 +10,7 @@ export const useSignup = () => {
         setIsLoading(true)
         setError(null)
         console.log("hook working")
-        const response = await fetch("https://ticket-system-ldom.onrender.com/api/user/signup", {
+        const response = await fetch("/api/user/signup", {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify({email, password, firstName, lastName, companyCode})
