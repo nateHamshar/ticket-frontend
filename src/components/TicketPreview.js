@@ -45,7 +45,7 @@ const TicketPreview = ({previewTicket}) => {
             console.log("status has been changed", json)
         }
 
-        document.location.reload()
+        window.location.reload()
     }
 
     return (
